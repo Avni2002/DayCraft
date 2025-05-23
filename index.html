@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DayCraft</title>
+  <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+  <div class="calendar-container">
+  <h1 id="monthYear"></h1>
+  <div style="text-align: center; margin-bottom: 10px;">
+    <button id="prevMonth">← Prev</button>
+    <button id="nextMonth">Next →</button>
+  </div>
+  <div class="calendar" id="calendar"></div>
+</div>
+
+  <script src="renderer.js"></script>
+  <!-- Note Modal -->
+<div id="noteModal" >
+  <h3 id="modalTitle">Add Note</h3>
+  <textarea id="noteText" rows="6" ></textarea>
+  <div style="margin-top: 10px; text-align: right;">
+    <button id="saveNoteBtn">Save</button>
+    <button id="cancelNoteBtn">Cancel</button>
+  </div>
+</div>
+
+<!-- Modal backdrop -->
+<div id="modalBackdrop"></div>
+</body>
+</html>
